@@ -1,0 +1,10 @@
+{
+  "title": "Debuggercises",
+  "path": "/exercises",
+  "reviewPath": "/review",
+  "buttons": {
+    "console": false,
+    "debugger": true,
+    "jsTutor": true
+  }
+}
