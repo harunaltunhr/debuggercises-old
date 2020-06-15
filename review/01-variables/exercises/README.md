@@ -2,13 +2,13 @@
 
 ## /exercises/01-variables/exercises 
 
-> 6/15/2020, 2:47:48 PM 
+> 6/15/2020, 3:22:31 PM 
 
 [../README.md](../README.md)
 
 - [/1-let.js](#1-letjs)  
 - [/2-let.js](#2-letjs)  
-- [/3-let-or-const.js](#3-let-or-constjs) - _incomplete_ 
+- [/3-let-or-const.js](#3-let-or-constjs)  
 - [/4-let-or-const.js](#4-let-or-constjs) - _incomplete_ 
 - [/5-let-or-const.js](#5-let-or-constjs) - _incomplete_ 
 
@@ -98,22 +98,19 @@ console.log(desert); // should log 'chocolate cake with frosting and banana'
 
 ## /3-let-or-const.js 
 
-> incomplete 
+>  
 >
 > [review source](../../../exercises/01-variables/exercises/3-let-or-const.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/01-variables/exercises/3-let-or-const.js:19:1)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
-    at Module.load (internal/modules/cjs/loader.js:986:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
-    at Module.require (internal/modules/cjs/loader.js:1026:19)
-    at require (internal/modules/cjs/helpers.js:72:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:78:1)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30) 
+LOG: undefined
+LOG: birch
+LOG: myrtle
+LOG: aspen
+LOG: blue
+LOG: myrtle
+LOG: oak
+LOG: orange
 ```
 
 ```js
@@ -135,34 +132,34 @@ UNCAUGHT: ReferenceError: _ is not defined
 */
 
 // declare a variable named aTree, don't assign a value!
-_;
+let aTree;
 console.log(aTree);
 
 // assign the value "birch" to the variable aTree
-_;
+aTree='birch';
 console.log(aTree);
 
 // declare a variable named turtle and assign it the name "myrtle"
-_;
+const turtle='myrtle';
 console.log(turtle);
 
 // reassign aTree to "aspen"
-_;
+aTree='aspen';
 console.log(aTree)
 
 // declare a variable named aColor with the value "blue"
-_;
+let aColor='blue';
 console.log(aColor);
 
 // log the value of turtle
-_;
+console.log(turtle);
 
 // reassign aTree to "oak"
-_;
+aTree='oak';
 console.log(aTree);
 
 // reassign aColor to "orange"
-_;
+aColor='orange';
 console.log(aColor);
 
 ```
