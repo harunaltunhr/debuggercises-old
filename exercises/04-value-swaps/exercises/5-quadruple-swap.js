@@ -7,9 +7,11 @@ let d = 2;
 let temp = null;
 
 // write some code
-
-
-
+temp=b;
+b=d;
+d=c;
+c=a;
+a=temp;
 
 // fill in the final _ to pass the assertions
 
@@ -25,6 +27,6 @@ console.assert(isTrue3, 'Test 3');
 const isTrue4 = d === 4;
 console.assert(isTrue4, 'Test 4');
 
-const isTrue5 = temp === _;
+const isTrue5 = temp === 1;
 console.assert(isTrue5, 'Test 5');
 
