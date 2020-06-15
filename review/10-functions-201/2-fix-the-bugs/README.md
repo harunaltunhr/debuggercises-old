@@ -2,7 +2,7 @@
 
 ## /exercises/10-functions-201/2-fix-the-bugs 
 
-> 6/15/2020, 2:47:48 PM 
+> 6/15/2020, 3:22:31 PM 
 
 [../README.md](../README.md)
 
