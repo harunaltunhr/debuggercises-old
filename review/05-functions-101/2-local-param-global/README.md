@@ -2,14 +2,14 @@
 
 ## /exercises/05-functions-101/2-local-param-global 
 
-> 6/15/2020, 3:22:31 PM 
+> 6/15/2020, 10:05:43 PM 
 
 [../README.md](../README.md)
 
 - [/0-example.js](#0-examplejs)  
-- [/1-parameter-local.js](#1-parameter-localjs) - _incomplete_ 
-- [/2-parameter-global.js](#2-parameter-globaljs) - _incomplete_ 
-- [/3-parameter-global.js](#3-parameter-globaljs) - _incomplete_ 
+- [/1-parameter-local.js](#1-parameter-localjs) - _pass_ 
+- [/2-parameter-global.js](#2-parameter-globaljs) - _pass_ 
+- [/3-parameter-global.js](#3-parameter-globaljs) - _pass_ 
 - [/5-local-global.js](#5-local-globaljs) - _incomplete_ 
 - [/6-local-global.js](#6-local-globaljs) - _incomplete_ 
 - [/7-parameter-local-global.js](#7-parameter-local-globaljs) - _incomplete_ 
@@ -143,22 +143,17 @@ console.log('global2:', global2);
 
 ## /1-parameter-local.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/05-functions-101/2-local-param-global/1-parameter-local.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/1-parameter-local.js:9:31)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
-    at Module.load (internal/modules/cjs/loader.js:986:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
-    at Module.require (internal/modules/cjs/loader.js:1026:19)
-    at require (internal/modules/cjs/helpers.js:72:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:78:1)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30) 
++ PASS: Test 1: funk
++ PASS: Test 2: funk
++ PASS: Test 3: funk
++ PASS: Test 1: jazz
++ PASS: Test 2: jazz
++ PASS: Test 3: jazz
 ```
 
 ```js
@@ -170,15 +165,15 @@ function funk(parameter) {
 }
 
 const funkReturn1 = funk('hello');
-const funk1 = funkReturn1 === _;
+const funk1 = funkReturn1 === 'funky hello';
 console.assert(funk1, 'Test 1: funk');
 
 const funkReturn2 = funk('boat');
-const funk2 = funkReturn2 === _;
+const funk2 = funkReturn2 === 'funky boat';
 console.assert(funk2, 'Test 2: funk');
 
 const funkReturn3 = funk('tree');
-const funk3 = funkReturn3 === _;
+const funk3 = funkReturn3 === 'funky tree';
 console.assert(funk3, 'Test 3: funk');
 
 
@@ -189,15 +184,15 @@ function jazz(parameter) {
 }
 
 const jazzReturn1 = funk('hello');
-const jazz1 = jazzReturn1 === _;
+const jazz1 = jazzReturn1 === 'funky hello';
 console.assert(jazz1, 'Test 1: jazz');
 
 const jazzReturn2 = funk('boat');
-const jazz2 = jazzReturn2 === _;
+const jazz2 = jazzReturn2 === 'funky boat';
 console.assert(jazz2, 'Test 2: jazz');
 
 const jazzReturn3 = funk('tree');
-const jazz3 = jazzReturn3 === _;
+const jazz3 = jazzReturn3 === 'funky tree';
 console.assert(jazz3, 'Test 3: jazz');
 
 ```
@@ -208,22 +203,14 @@ console.assert(jazz3, 'Test 3: jazz');
 
 ## /2-parameter-global.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/05-functions-101/2-local-param-global/2-parameter-global.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/2-parameter-global.js:20:31)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
-    at Module.load (internal/modules/cjs/loader.js:986:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
-    at Module.require (internal/modules/cjs/loader.js:1026:19)
-    at require (internal/modules/cjs/helpers.js:72:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:78:1)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30) 
++ PASS: Test 1: funk
++ PASS: Test 2: funk
++ PASS: Test 3: funk
 ```
 
 ```js
@@ -246,19 +233,19 @@ function funk(parameter) {
 }
 
 const funkReturn1 = funk('hello');
-const funk1 = funkReturn1 === _;
+const funk1 = funkReturn1 === 'funky hello';
 console.assert(funk1, 'Test 1: funk');
 
 global = '#';
 
 const funkReturn2 = funk('boat');
-const funk2 = funkReturn2 === _;
+const funk2 = funkReturn2 === '#funky boat';
 console.assert(funk2, 'Test 2: funk');
 
 global = `${global}!`;
 
 const funkReturn3 = funk('tree');
-const funk3 = funkReturn3 === _;
+const funk3 = funkReturn3 === '#funky!funky tree';
 console.assert(funk3, 'Test 3: funk');
 
 
@@ -270,22 +257,14 @@ console.assert(funk3, 'Test 3: funk');
 
 ## /3-parameter-global.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/05-functions-101/2-local-param-global/3-parameter-global.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/05-functions-101/2-local-param-global/3-parameter-global.js:11:31)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
-    at Module.load (internal/modules/cjs/loader.js:986:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
-    at Module.require (internal/modules/cjs/loader.js:1026:19)
-    at require (internal/modules/cjs/helpers.js:72:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:78:1)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30) 
++ PASS: Test 1: jazz
++ PASS: Test 2: jazz
++ PASS: Test 3: jazz
 ```
 
 ```js
@@ -299,19 +278,19 @@ function jazz(parameter) {
 }
 
 const jazzReturn1 = jazz('hello');
-const jazz1 = jazzReturn1 === _;
+const jazz1 = jazzReturn1 === '<3 jazzy hello';
 console.assert(jazz1, 'Test 1: jazz');
 
 global = `${global}!`;
 
 const jazzReturn2 = jazz('boat');
-const jazz2 = jazzReturn2 === _;
+const jazz2 = jazzReturn2 === '<3 jazzy! jazzy boat';
 console.assert(jazz2, 'Test 2: jazz');
 
 global = ':(';
 
 const jazzReturn3 = jazz('tree');
-const jazz3 = jazzReturn3 === _;
+const jazz3 = jazzReturn3 === ":( jazzy tree";
 console.assert(jazz3, 'Test 3: jazz');
 
 ```
