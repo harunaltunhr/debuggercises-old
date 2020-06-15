@@ -1,8 +1,14 @@
-function mystery(a, b) {
-
+function mystery(a, b){
+    let result = '';
+    if (a = b){
+        result = 'path 1';
+    }   else if (typeof a === typeof b) {
+        result = 'path 2';
+    }   else {
+        result = 'path 3'; 
 }
-
-
+return result;
+}
 const _1_expect = 'path 1';
 const _1_actual = mystery(0, null);
 console.assert(_1_actual === _1_expect, 'Test 1');
