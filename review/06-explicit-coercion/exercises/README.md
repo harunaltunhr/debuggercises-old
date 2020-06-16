@@ -2,34 +2,32 @@
 
 ## /exercises/06-explicit-coercion/exercises 
 
-> 6/15/2020, 10:06:16 PM 
+> 6/16/2020, 2:21:44 PM 
 
 [../README.md](../README.md)
 
-- [/1-write-expected.js](#1-write-expectedjs) - _incomplete_ 
-- [/2-write-arguments.js](#2-write-argumentsjs) - _incomplete_ 
-- [/3-write-function.js](#3-write-functionjs) - _fail_ 
+- [/1-write-expected.js](#1-write-expectedjs) - _pass_ 
+- [/2-write-arguments.js](#2-write-argumentsjs) - _pass_ 
+- [/3-write-function.js](#3-write-functionjs) - _pass_ 
 
 ---
 
 ## /1-write-expected.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/06-explicit-coercion/exercises/1-write-expected.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/06-explicit-coercion/exercises/1-write-expected.js:13:19)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
-    at Module.load (internal/modules/cjs/loader.js:986:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
-    at Module.require (internal/modules/cjs/loader.js:1026:19)
-    at require (internal/modules/cjs/helpers.js:72:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:78:1)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -45,39 +43,39 @@ function mystery(x) {
 
 // write the expected return value
 
-const _1_expect = _;
+const _1_expect = 0;
 const _1_actual = mystery(undefined);
 console.assert(_1_actual === _1_expect, 'Test 1');
 
-const _2_expect = _;
+const _2_expect = 0;
 const _2_actual = mystery(null);
 console.assert(_2_actual === _2_expect, 'Test 2');
 
-const _3_expect = _;
+const _3_expect = 1;
 const _3_actual = mystery('false');
 console.assert(_3_actual === _3_expect, 'Test 3');
 
-const _4_expect = _;
+const _4_expect = 0;
 const _4_actual = mystery('');
 console.assert(_4_actual === _4_expect, 'Test 4');
 
-const _5_expect = _;
+const _5_expect = 0;
 const _5_actual = mystery(0);
 console.assert(_5_actual === _5_expect, 'Test 5');
 
-const _6_expect = _;
+const _6_expect = 1;
 const _6_actual = mystery('  ');
 console.assert(_6_actual === _6_expect, 'Test 6');
 
-const _7_expect = _;
+const _7_expect = 1;
 const _7_actual = mystery(-1);
 console.assert(_7_actual === _7_expect, 'Test 7');
 
-const _8_expect = _;
-const _8_actual = mystery(true);
+const _8_expect = 1;
+const _8_actual = mystery('true');
 console.assert(_8_actual === _8_expect, 'Test 8');
 
-const _9_expect = _;
+const _9_expect = 1;
 const _9_actual = mystery(1);
 console.assert(_9_actual === _9_expect, 'Test 9');
 
@@ -90,22 +88,20 @@ console.assert(_9_actual === _9_expect, 'Test 9');
 
 ## /2-write-arguments.js 
 
-> incomplete 
+> pass 
 >
 > [review source](../../../exercises/06-explicit-coercion/exercises/2-write-arguments.js)
 
 ```txt
-UNCAUGHT: ReferenceError: _ is not defined
-    at Object.<anonymous> (  ...  /exercises/06-explicit-coercion/exercises/2-write-arguments.js:14:27)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30)
-    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
-    at Module.load (internal/modules/cjs/loader.js:986:32)
-    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
-    at Module.require (internal/modules/cjs/loader.js:1026:19)
-    at require (internal/modules/cjs/helpers.js:72:18)
-    at evaluate (  ...  /scripts/lib/evaluate.js:12:7)
-    at Object.<anonymous> (  ...  /scripts/review.js:78:1)
-    at Module._compile (internal/modules/cjs/loader.js:1138:30) 
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -122,39 +118,39 @@ function mystery(x) {
 // find an argument to get the expected return value
 
 const _1_expect = -1;
-const _1_actual = mystery(_);
+const _1_actual = mystery(-1);
 console.assert(Object.is(_1_actual, _1_expect), 'Test 1');
 
 const _2_expect = 0;
-const _2_actual = mystery(_);
+const _2_actual = mystery(0);
 console.assert(Object.is(_2_actual, _2_expect), 'Test 2');
 
 const _3_expect = 1;
-const _3_actual = mystery(_);
+const _3_actual = mystery(1);
 console.assert(Object.is(_3_actual, _3_expect), 'Test 3');
 
 const _4_expect = 0.5;
-const _4_actual = mystery(_);
+const _4_actual = mystery(0.5);
 console.assert(Object.is(_4_actual, _4_expect), 'Test 4');
 
 const _5_expect = 1000;
-const _5_actual = mystery(_);
+const _5_actual = mystery(1000);
 console.assert(Object.is(_5_actual, _5_expect), 'Test 5');
 
 const _6_expect = NaN;
-const _6_actual = mystery(_);
+const _6_actual = mystery(NaN);
 console.assert(Object.is(_6_actual, _6_expect), 'Test 6');
 
 const _7_expect = NaN;
-const _7_actual = mystery(_);
+const _7_actual = mystery(NaN);
 console.assert(Object.is(_7_actual, _7_expect), 'Test 7');
 
 const _8_expect = NaN;
-const _8_actual = mystery(_);
+const _8_actual = mystery(undefined);
 console.assert(Object.is(_8_actual, _8_expect), 'Test 8');
 
 const _9_expect = NaN;
-const _9_actual = mystery(_);
+const _9_actual = mystery(null);
 console.assert(Object.is(_9_actual, _9_expect), 'Test 9');
 
 
@@ -166,20 +162,20 @@ console.assert(Object.is(_9_actual, _9_expect), 'Test 9');
 
 ## /3-write-function.js 
 
-> fail 
+> pass 
 >
 > [review source](../../../exercises/06-explicit-coercion/exercises/3-write-function.js)
 
 ```txt
-- FAIL: Test 1
-- FAIL: Test 2
-- FAIL: Test 3
-- FAIL: Test 4
-- FAIL: Test 5
-- FAIL: Test 6
-- FAIL: Test 7
-- FAIL: Test 8
-- FAIL: Test 9
++ PASS: Test 1
++ PASS: Test 2
++ PASS: Test 3
++ PASS: Test 4
++ PASS: Test 5
++ PASS: Test 6
++ PASS: Test 7
++ PASS: Test 8
++ PASS: Test 9
 ```
 
 ```js
@@ -191,8 +187,9 @@ console.assert(Object.is(_9_actual, _9_expect), 'Test 9');
    ===
 */
 function mystery(x, y) {
-
+ return Number(x)===Number(y);
 }
+
 
 // all of the test cases are correct
 

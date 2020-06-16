@@ -2,7 +2,7 @@
 
 ## /exercises/09-conditionals/1-execution-paths 
 
-> 6/15/2020, 10:06:16 PM 
+> 6/16/2020, 2:21:44 PM 
 
 [../README.md](../README.md)
 

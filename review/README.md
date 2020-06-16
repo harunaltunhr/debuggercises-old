@@ -2,7 +2,7 @@
 
 ## /exercises 
 
-> 6/15/2020, 10:06:16 PM 
+> 6/16/2020, 2:21:44 PM 
 
 [../README.md](../README.md)
 
@@ -67,10 +67,10 @@
     - [/1-parameter-local.js](./05-functions-101/2-local-param-global/README.md#1-parameter-localjs) - _pass_ 
     - [/2-parameter-global.js](./05-functions-101/2-local-param-global/README.md#2-parameter-globaljs) - _pass_ 
     - [/3-parameter-global.js](./05-functions-101/2-local-param-global/README.md#3-parameter-globaljs) - _pass_ 
-    - [/5-local-global.js](./05-functions-101/2-local-param-global/README.md#5-local-globaljs) - _incomplete_ 
-    - [/6-local-global.js](./05-functions-101/2-local-param-global/README.md#6-local-globaljs) - _incomplete_ 
-    - [/7-parameter-local-global.js](./05-functions-101/2-local-param-global/README.md#7-parameter-local-globaljs) - _incomplete_ 
-    - [/8-prameter-local-global.js](./05-functions-101/2-local-param-global/README.md#8-prameter-local-globaljs) - _incomplete_ 
+    - [/5-local-global.js](./05-functions-101/2-local-param-global/README.md#5-local-globaljs) - _pass_ 
+    - [/6-local-global.js](./05-functions-101/2-local-param-global/README.md#6-local-globaljs) - _pass_ 
+    - [/7-parameter-local-global.js](./05-functions-101/2-local-param-global/README.md#7-parameter-local-globaljs) - _pass_ 
+    - [/8-prameter-local-global.js](./05-functions-101/2-local-param-global/README.md#8-prameter-local-globaljs) - _pass_ 
     - [/extra-pure-functions.js](./05-functions-101/2-local-param-global/README.md#extra-pure-functionsjs)  
 - [/06-explicit-coercion](./06-explicit-coercion/README.md)
   - [/examples](./06-explicit-coercion/examples/README.md)
@@ -79,9 +79,9 @@
     - [/3-number.js](./06-explicit-coercion/examples/README.md#3-numberjs)  
     - [/4-about-nan.js](./06-explicit-coercion/examples/README.md#4-about-nanjs) - _fail_ 
   - [/exercises](./06-explicit-coercion/exercises/README.md)
-    - [/1-write-expected.js](./06-explicit-coercion/exercises/README.md#1-write-expectedjs) - _incomplete_ 
-    - [/2-write-arguments.js](./06-explicit-coercion/exercises/README.md#2-write-argumentsjs) - _incomplete_ 
-    - [/3-write-function.js](./06-explicit-coercion/exercises/README.md#3-write-functionjs) - _fail_ 
+    - [/1-write-expected.js](./06-explicit-coercion/exercises/README.md#1-write-expectedjs) - _pass_ 
+    - [/2-write-arguments.js](./06-explicit-coercion/exercises/README.md#2-write-argumentsjs) - _pass_ 
+    - [/3-write-function.js](./06-explicit-coercion/exercises/README.md#3-write-functionjs) - _pass_ 
 - [/07-logical-operators](./07-logical-operators/README.md)
   - [/examples](./07-logical-operators/examples/README.md)
     - [/0-truthiness.js](./07-logical-operators/examples/README.md#0-truthinessjs)  

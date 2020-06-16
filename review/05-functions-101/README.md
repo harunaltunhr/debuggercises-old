@@ -2,7 +2,7 @@
 
 ## /exercises/05-functions-101 
 
-> 6/15/2020, 10:06:16 PM 
+> 6/16/2020, 2:21:44 PM 
 
 [../README.md](../README.md)
 
@@ -22,9 +22,9 @@
   - [/1-parameter-local.js](./2-local-param-global/README.md#1-parameter-localjs) - _pass_ 
   - [/2-parameter-global.js](./2-local-param-global/README.md#2-parameter-globaljs) - _pass_ 
   - [/3-parameter-global.js](./2-local-param-global/README.md#3-parameter-globaljs) - _pass_ 
-  - [/5-local-global.js](./2-local-param-global/README.md#5-local-globaljs) - _incomplete_ 
-  - [/6-local-global.js](./2-local-param-global/README.md#6-local-globaljs) - _incomplete_ 
-  - [/7-parameter-local-global.js](./2-local-param-global/README.md#7-parameter-local-globaljs) - _incomplete_ 
-  - [/8-prameter-local-global.js](./2-local-param-global/README.md#8-prameter-local-globaljs) - _incomplete_ 
+  - [/5-local-global.js](./2-local-param-global/README.md#5-local-globaljs) - _pass_ 
+  - [/6-local-global.js](./2-local-param-global/README.md#6-local-globaljs) - _pass_ 
+  - [/7-parameter-local-global.js](./2-local-param-global/README.md#7-parameter-local-globaljs) - _pass_ 
+  - [/8-prameter-local-global.js](./2-local-param-global/README.md#8-prameter-local-globaljs) - _pass_ 
   - [/extra-pure-functions.js](./2-local-param-global/README.md#extra-pure-functionsjs)  
 
